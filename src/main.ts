@@ -18,10 +18,21 @@ type OriginalSize = {
   url: string;
 };
 //END MODELS
+
+//FETCH
+
+
 const getGiphy = async () => {
   const response = await fetch("https://api.giphy.com/v1/gifs/random?api_key=P97zFDhcpVpYhn8G9Z5UNOR69ORP0dJA");
-  const data = await response.json();
-  console.log(data);
+  const data: GiphyResponse = await response.json();
+
+  console.log(data)
+
+const img = document.createElement("img");
+
+
+
+
 };
 
 function handleClick(): void {
