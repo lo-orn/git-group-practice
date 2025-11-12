@@ -1,5 +1,6 @@
-import "./style.css";
+import './style.css'
 
+<<<<<<< HEAD
 // MODELS
 type GiphyResponse = {
   data: Gif[];
@@ -34,6 +35,14 @@ const img = document.createElement("img");
 
 
 };
+=======
+const getGiphy = async() => {
+  const response = await fetch("https://api.giphy.com/v1/gifs/random?api_key=P97zFDhcpVpYhn8G9Z5UNOR69ORP0dJA");
+  const data = await response.json();
+  console.log(data)
+  
+}
+>>>>>>> 0c338c83d0611b79a2c442986813cc95e74cbfea
 
 function handleClick(): void {
   alert("Knappen klickades!");
