@@ -7,4 +7,13 @@ const getGiphy = async() => {
   
 }
 
+function handleClick(): void {
+  alert("Knappen klickades!");
+}
+const button = document.getElementById("button");
+
+if (button instanceof HTMLButtonElement) {
+  button.addEventListener("click", handleClick);
+}
+
 getGiphy();
