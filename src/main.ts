@@ -1,5 +1,6 @@
 import "./style.css";
 
+// MODELS
 type GiphyResponse = {
   data: Gif[];
 };
@@ -16,3 +17,4 @@ type ImageSize = {
 type OriginalSize = {
   url: string;
 };
+//END MODELS
