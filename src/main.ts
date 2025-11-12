@@ -30,7 +30,8 @@ const getGiphy = async () => {
 
 const img = document.createElement("img");
 img.src = data.data.images.original.url
-app.appendChild(img)
+const app = document.getElementById("gif")
+gif.appendChild(img)
 
 
 
