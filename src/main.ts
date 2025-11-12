@@ -2,16 +2,16 @@ import './style.css'
 
 // MODELS
 type GiphyResponse = {
-  data: Gif[];
+  data: Gif;
 };
 
 type Gif = {
   id: string;
-  images: ImageSize[];
+  images: ImageSize;
 };
 
 type ImageSize = {
-  original: OriginalSize[];
+  original: OriginalSize;
 };
 
 type OriginalSize = {
