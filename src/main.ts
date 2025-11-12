@@ -29,6 +29,8 @@ const getGiphy = async () => {
   console.log(data)
 
 const img = document.createElement("img");
+img.src = data.data.images.original.url
+app.appendChild(img)
 
 
 
@@ -37,7 +39,7 @@ const img = document.createElement("img");
 
 
 function handleClick(): void {
-  alert("Knappen klickades!");
+  window.location.reload();
 }
 const button = document.getElementById("button");
 
